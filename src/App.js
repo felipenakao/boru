@@ -5,6 +5,9 @@ import styled from 'styled-components';
 
 import Header from './components/Header';
 import Restaurant from './components/Restaurant';
+import Gallery from './Gallery';
+import Events from './components/Events';
+import Menu from './components/Menu';
 
 const Container = styled.div`
   width: 1366px;
@@ -19,6 +22,9 @@ class App extends Component {
         <Container>
           <Header />
           <Restaurant />
+          <Gallery />
+          <Events />
+          <Menu />
         </Container>
       </div>
     );

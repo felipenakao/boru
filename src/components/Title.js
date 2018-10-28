@@ -10,6 +10,7 @@ const Container = styled.div`
   align-self: flex-start;
   align-items: center;
   border-radius: 10px;
+  margin: ${props => props.margin}
 `;
 
 const Logo = styled.img`
@@ -18,15 +19,16 @@ const Logo = styled.img`
   margin-right: 10px;
 `;
 
-const Text = styled.div`
+const Text = styled.h2`
   color: #e2dfce;
   font-size: 24px;
+  margin: 0px;
 `;
 
-const Title = () => (
-    <Container>
-        <Logo src="/assets/img/logo.png" />
-        <Text>O Restaurante</Text>
+const Title = ({ margin }) => (
+    <Container margin={margin}>
+      <Logo src="/assets/img/logo.png" />
+      <Text>O Restaurante</Text>
     </Container>
 )
 
