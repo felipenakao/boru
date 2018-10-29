@@ -23,6 +23,8 @@ const Text = styled.h2`
   color: #e2dfce;
   font-size: 24px;
   margin: 0px;
+  font-family: Passion One;
+  font-weight: 400;
 `;
 
 const Title = ({ margin }) => (

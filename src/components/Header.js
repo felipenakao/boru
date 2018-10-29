@@ -52,9 +52,11 @@ const MenuItem = styled.li`
   color: #e2dfce;
   margin: 10px;
   list-style: none;
+  font-family: Roboto;
+  font-weight: 400;
 
   &:hover{
-    color: #febe00;
+    color: #feb14b;
     cursor: pointer;
   }
 `;
@@ -68,7 +70,7 @@ const Header = () => (
         </LogoContainer>
         
         <Menu>
-          <MenuItem>Restaurante</MenuItem>
+          <MenuItem>O Restaurante</MenuItem>
           <MenuItem>Cardápio</MenuItem>
           <MenuItem>Rodízio</MenuItem>
           <MenuItem>Contato & Localização</MenuItem>

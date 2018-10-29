@@ -6,6 +6,8 @@ const Container = styled.div`
   padding: 60px;
   display: flex;
   background: #131217;
+  background-image: url('/assets/img/pattern-japanese-01.png');
+  background-repeat: repeat;
 `;
 
 const Left = styled.div`
@@ -20,6 +22,7 @@ const Right = styled.div`
 const Paragraph = styled.p`
   color: #e2dfce;
   line-height: 24px;
+  font-family: Roboto;
 `;
 
 const Restaurant = () => (

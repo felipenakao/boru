@@ -6,6 +6,8 @@ const GalleryContent = styled.div`
   background: #fdb14d;
   display: flex;
   justify-content: space-between;
+  background-image: url('/assets/img/pattern-japanese-02.png');
+  background-repeat: repeat;
 `;
 
 const GalleryImg = styled.img`
