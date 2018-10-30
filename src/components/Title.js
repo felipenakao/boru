@@ -27,10 +27,10 @@ const Text = styled.h2`
   font-weight: 400;
 `;
 
-const Title = ({ margin }) => (
+const Title = ({ margin, title, icon }) => (
     <Container margin={margin}>
-      <Logo src="/assets/img/logo.png" />
-      <Text>O Restaurante</Text>
+      <Logo src={icon} />
+      <Text>{title}</Text>
     </Container>
 )
 

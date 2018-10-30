@@ -26,9 +26,9 @@ const Paragraph = styled.p`
 `;
 
 const Restaurant = () => (
-  <Container>
+  <Container id="restaurant">
     <Left>
-      <Title />
+      <Title icon="/assets/img/logo.png" title="O Restaurante" />
       <Paragraph>
         O Boru tem como proposta proporcionar uma experiência agradável, garantindo a qualidade no alimentos  da culinária japonesa, num ambiente familiar aconchegante e atendimento diferenciado.
       </Paragraph>

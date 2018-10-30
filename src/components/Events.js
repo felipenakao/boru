@@ -58,6 +58,7 @@ const EventTitleText = styled.h3`
 
 const EventImg = styled.img`
   width: 100%;
+  object-fit: contain;
   margin: 30px 0px;
 `;
 
@@ -80,14 +81,14 @@ const EventSubmit = styled.div`
   }
 `;
 
-const Events = () => (
+const Events = ({ toggleBoruKids }) => (
   <EventsContainer>
     <Event>
       <EventTitle>
         <EventTitleText>JAPA NA SUA CASA</EventTitleText>
         <EventTitleBorder />
       </EventTitle>
-      <EventImg src="/assets/img/restaurant-featured.jpg" />
+      <EventImg src="/assets/img/event-01.png" />
       <EventText>
         Oferecemos tudo de melhor da culinária japonesa para seu evento, personalizamos o serviço e cardápio ao gosto do cliente de acordo com perfil do seu evento.
       </EventText>
@@ -99,19 +100,19 @@ const Events = () => (
         <EventTitleText>FESTAS CORPORATIVAS<br />E SOCIAIS</EventTitleText>
         <EventTitleBorder />
       </EventTitle>
-      <EventImg src="/assets/img/restaurant-featured.jpg" />
+      <EventImg src="/assets/img/event-02.png" />
       <EventText>
         Desde uma simples comemoração, um jantar entre amigos até os mais elaborados  eventos ( aniversários / casamentos / camarotes / 15 anos). 
       </EventText>
       <EventSubmit className="submit">Saiba Mais...</EventSubmit>
     </Event>
 
-    <Event>
+    <Event onClick={() => toggleBoruKids()}>
       <EventTitle>
         <EventTitleText>BORU SUSHI KIDS</EventTitleText>
         <EventTitleBorder />
       </EventTitle>
-      <EventImg src="/assets/img/restaurant-featured.jpg" />
+      <EventImg src="/assets/img/event-03.png" />
       <EventText>
         A oportunidade de participar de uma aulinha japonesa no contexto da criança, ministrada pelo chefe do sushi da casa, com conteúdo pensado para idade.   
       </EventText>

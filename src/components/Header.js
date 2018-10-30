@@ -39,7 +39,7 @@ const LogoContainer = styled.div`
 `;
 
 const Logo = styled.img`
-  width: 75px;
+  width: 125px;
 `;
 
 const Menu = styled.ul`
@@ -61,21 +61,20 @@ const MenuItem = styled.li`
   }
 `;
 
-const Header = () => (
+const Header = ({ scrollToDiv }) => (
   <HeaderContainer>
     <Gradient>
       <Nav>
         <LogoContainer>
-          <Logo src="/assets/img/logo.png"></Logo>
+          <Logo src="/assets/img/header-logo.png"></Logo>
         </LogoContainer>
         
         <Menu>
-          <MenuItem>O Restaurante</MenuItem>
-          <MenuItem>Cardápio</MenuItem>
-          <MenuItem>Rodízio</MenuItem>
-          <MenuItem>Contato & Localização</MenuItem>
-          <MenuItem><img width="20px" src="/assets/img/facebook.png" /></MenuItem>
-          <MenuItem><img width="20px" src="/assets/img/instagram.png" /></MenuItem>
+          <MenuItem onClick={() => scrollToDiv('#restaurant')}>O Restaurante</MenuItem>
+          <MenuItem onClick={() => scrollToDiv('#menu')}>Cardápio</MenuItem>
+          <MenuItem onClick={() => scrollToDiv('#contact')}>Contato & Localização</MenuItem>
+          <MenuItem><a href="https://www.facebook.com/borusushi/" target="_blank"><img width="20px" src="/assets/img/facebook.png" /></a></MenuItem>
+          <MenuItem><a href="https://www.instagram.com/boru_sushi" target="_blank"><img width="20px" src="/assets/img/instagram.png" /></a></MenuItem>
         </Menu>
       </Nav>
     </Gradient>
