@@ -95,29 +95,33 @@ const Contact = () => (
                     Atendimento:
                 </TelTitle>
                 <TelDescription>
-                    3758-1049
+                    (11) 3758-1049 / (11) 3758-0547
                 </TelDescription>
             </Tel>
-            <Tel>
+            {/* <Tel>
                 <TelTitle>
                     Delivery:
                 </TelTitle>
                 <TelDescription>
                     3758-1049
                 </TelDescription>
-            </Tel>
+            </Tel> */}
         </TelContainer>
 
-        <NumberContainer>
+        {/* <NumberContainer>
             <NumberTitle>Almoço:</NumberTitle>
             <NumberDescription>Segunda a Sexta-feira das 12:00h às 15:00h</NumberDescription>
-        </NumberContainer>
+        </NumberContainer> */}
 
         <NumberContainer>
-            <NumberTitle>Jantar:</NumberTitle>
-            <NumberDescription>Segunda a Sexta-feira das 12:00h às 15:00h</NumberDescription>
-            <NumberDescription>Segunda a Sexta-feira das 12:00h às 15:00h</NumberDescription>
-            <NumberDescription>Segunda a Sexta-feira das 12:00h às 15:00h</NumberDescription>
+            <NumberTitle>Horários de Funcionamento:</NumberTitle>
+            <NumberDescription>Segunda-Feira: Fechado</NumberDescription>
+            <NumberDescription>Terça-Feira: 11:30 às 15:00 / 18:30 às 22:30</NumberDescription>
+            <NumberDescription>Quarta-Feira: 11:39 às 15:00 / 18:30 às 22:30</NumberDescription>
+            <NumberDescription>Quinta-Feira:  11:30 às 15:00 / 18:30 às 23:00</NumberDescription>
+            <NumberDescription>Sexta-Feira: 11:30 às 15:00 / 18:30 às 23:30</NumberDescription>
+            <NumberDescription>Sábado: 12:00 às 16:00 / 18:30 às  00:00</NumberDescription>
+            <NumberDescription>Domingo: 12:00 às 16:00 / 18:30 às 23:30</NumberDescription>
         </NumberContainer>
 
          <NumberContainer>
@@ -143,6 +147,7 @@ const Contact = () => (
                 <SpondorLogoItem src="/assets/img/tripadvisor-logo.png" />
                 <SpondorLogoItem src="/assets/img/ifood-logo.png" />
                 <SpondorLogoItem src="/assets/img/spoonrocket-logo.png" />
+                <SpondorLogoItem src="/assets/img/rappi-logo.png" />
             </SponsorLogos>
         </Sponsor>
     </ContactContainer>

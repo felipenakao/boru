@@ -10,7 +10,7 @@ const MenuContainer = styled.div`
 const MenuHeader = styled.div`
   background-image: url('/assets/img/menu-header.jpg');
   background-size: cover;
-  height: 768px;
+  height: 1080px;
   width: 100%;
 `;
 

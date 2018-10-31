@@ -3,11 +3,12 @@ import styled from 'styled-components';
 
 const GalleryContent = styled.div`
   padding: 30px;
-  background: #fdb14d;
+  background: #323232;
   display: flex;
   justify-content: space-between;
-  background-image: url('/assets/img/pattern-japanese-02.png');
   background-repeat: repeat;
+  box-shadow: 0px 0px 30px black;
+  border: solid black 3px;
 `;
 
 const GalleryImg = styled.img`
@@ -18,10 +19,10 @@ const GalleryImg = styled.img`
 
 const Gallery = () => (
   <GalleryContent>
-    <GalleryImg src="/assets/img/restaurant-featured.jpg" />
-    <GalleryImg src="/assets/img/restaurant-featured.jpg" />
-    <GalleryImg src="/assets/img/restaurant-featured.jpg" />
-    <GalleryImg src="/assets/img/restaurant-featured.jpg" />
+    <GalleryImg src="/assets/img/gallery-03.jpg" />
+    <GalleryImg src="/assets/img/gallery-01.jpg" />
+    <GalleryImg src="/assets/img/gallery-02.jpg" />
+    <GalleryImg src="/assets/img/gallery-04.jpg" />
   </GalleryContent>
 );
 

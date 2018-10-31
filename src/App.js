@@ -12,7 +12,9 @@ import Events from './components/Events';
 import Menu from './components/Menu';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import BoruKids from './components/BoruKids';
+import BoruKids from './components/Modals/BoruKids';
+import Social from './components/Modals/Social';
+import Delivery from './components/Modals/Delivery';
 
 const Container = styled.div`
   width: 1366px;
@@ -24,6 +26,8 @@ class App extends Component {
 
   state = {
     openBoruKids: false,
+    openSocial: false,
+    openDelivery: false,
   }
 
  scrollToDiv = (elem) => {
@@ -35,6 +39,8 @@ class App extends Component {
  }
 
  toggleBoruKids = () => this.setState({ openBoruKids: !this.state.openBoruKids });
+ toggleSocial = () => this.setState({ openSocial: !this.state.openSocial });
+ toggleDelivery = () => this.setState({ openDelivery: !this.state.openDelivery });
 
   render() {
     return (
@@ -43,13 +49,15 @@ class App extends Component {
           <Header scrollToDiv={this.scrollToDiv} />
           <Restaurant />
           <Gallery />
-          <Events toggleBoruKids={this.toggleBoruKids} />
+          <Events toggleBoruKids={this.toggleBoruKids} toggleSocial={this.toggleSocial} toggleDelivery={this.toggleDelivery} />
           <Menu scrollToDiv={this.scrollToDiv} />
           <Contact margin="auto" />
           <Footer scrollToDiv={this.scrollToDiv} />
         </Container>
 
         <BoruKids open={this.state.openBoruKids} close={this.toggleBoruKids} />
+        <Social open={this.state.openSocial} close={this.toggleSocial} />
+        <Delivery open={this.state.openDelivery} close={this.toggleDelivery} />
       </div>
     );
   }

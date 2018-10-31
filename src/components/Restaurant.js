@@ -40,7 +40,7 @@ const Restaurant = () => (
       </Paragraph>
     </Left>
     <Right>
-      <img src="/assets/img/restaurant-featured.jpg" />
+      <img width="600" src="/assets/img/restaurant-featured.jpg" />
     </Right>
   </Container>
 );

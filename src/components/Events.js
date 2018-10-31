@@ -59,7 +59,7 @@ const EventTitleText = styled.h3`
 const EventImg = styled.img`
   width: 100%;
   object-fit: contain;
-  margin: 30px 0px;
+  margin: 0px 0px;
 `;
 
 const EventText = styled.p`
@@ -81,26 +81,14 @@ const EventSubmit = styled.div`
   }
 `;
 
-const Events = ({ toggleBoruKids }) => (
+const Events = ({ toggleBoruKids, toggleDelivery, toggleSocial }) => (
   <EventsContainer>
-    <Event>
+    <Event onClick={() => toggleSocial()}>
       <EventTitle>
-        <EventTitleText>JAPA NA SUA CASA</EventTitleText>
+        <EventTitleText>EVENTOS SOCIAIS E CORPORATIVOS</EventTitleText>
         <EventTitleBorder />
       </EventTitle>
       <EventImg src="/assets/img/event-01.png" />
-      <EventText>
-        Oferecemos tudo de melhor da culinária japonesa para seu evento, personalizamos o serviço e cardápio ao gosto do cliente de acordo com perfil do seu evento.
-      </EventText>
-      <EventSubmit className="submit">Saiba Mais...</EventSubmit>
-    </Event>
-
-    <Event>
-      <EventTitle>
-        <EventTitleText>FESTAS CORPORATIVAS<br />E SOCIAIS</EventTitleText>
-        <EventTitleBorder />
-      </EventTitle>
-      <EventImg src="/assets/img/event-02.png" />
       <EventText>
         Desde uma simples comemoração, um jantar entre amigos até os mais elaborados  eventos ( aniversários / casamentos / camarotes / 15 anos). 
       </EventText>
@@ -112,12 +100,25 @@ const Events = ({ toggleBoruKids }) => (
         <EventTitleText>BORU SUSHI KIDS</EventTitleText>
         <EventTitleBorder />
       </EventTitle>
-      <EventImg src="/assets/img/event-03.png" />
+      <EventImg src="/assets/img/event-02.png" />
       <EventText>
         A oportunidade de participar de uma aulinha japonesa no contexto da criança, ministrada pelo chefe do sushi da casa, com conteúdo pensado para idade.   
       </EventText>
       <EventSubmit className="submit">Saiba Mais...</EventSubmit>
     </Event>
+
+    <Event onClick={() => toggleDelivery()}>
+      <EventTitle>
+        <EventTitleText>DELIVERY</EventTitleText>
+        <EventTitleBorder />
+      </EventTitle>
+      <EventImg src="/assets/img/event-03.png" />
+      <EventText>
+        Entregamos nossos deliciosos pratos com eficiência e rapidez em sua casa. Os pedidos podem ser realizados diretamente do restaurante ou pelos aplicativos Rappi e Ifood.
+      </EventText>
+      <EventSubmit className="submit">Saiba Mais...</EventSubmit>
+    </Event>
+
   </EventsContainer>
 );
 

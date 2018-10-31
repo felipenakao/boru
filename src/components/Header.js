@@ -30,7 +30,6 @@ const Nav = styled.div`
   justify-content: space-between;
 
   @media only screen and (max-width: 480px){
-    background: rgba(0,0,0,0.5);
   }
 `;
 
@@ -63,21 +62,19 @@ const MenuItem = styled.li`
 
 const Header = ({ scrollToDiv }) => (
   <HeaderContainer>
-    <Gradient>
-      <Nav>
-        <LogoContainer>
-          <Logo src="/assets/img/header-logo.png"></Logo>
-        </LogoContainer>
-        
-        <Menu>
-          <MenuItem onClick={() => scrollToDiv('#restaurant')}>O Restaurante</MenuItem>
-          <MenuItem onClick={() => scrollToDiv('#menu')}>Cardápio</MenuItem>
-          <MenuItem onClick={() => scrollToDiv('#contact')}>Contato & Localização</MenuItem>
-          <MenuItem><a href="https://www.facebook.com/borusushi/" target="_blank"><img width="20px" src="/assets/img/facebook.png" /></a></MenuItem>
-          <MenuItem><a href="https://www.instagram.com/boru_sushi" target="_blank"><img width="20px" src="/assets/img/instagram.png" /></a></MenuItem>
-        </Menu>
-      </Nav>
-    </Gradient>
+    <Nav>
+      <LogoContainer>
+        <Logo src="/assets/img/header-logo.png"></Logo>
+      </LogoContainer>
+      
+      <Menu>
+        <MenuItem onClick={() => scrollToDiv('#restaurant')}>O Restaurante</MenuItem>
+        <MenuItem onClick={() => scrollToDiv('#menu')}>Cardápio</MenuItem>
+        <MenuItem onClick={() => scrollToDiv('#contact')}>Contato & Localização</MenuItem>
+        <MenuItem><a href="https://www.facebook.com/borusushi/" target="_blank"><img width="20px" src="/assets/img/facebook.png" /></a></MenuItem>
+        <MenuItem><a href="https://www.instagram.com/boru_sushi" target="_blank"><img width="20px" src="/assets/img/instagram.png" /></a></MenuItem>
+      </Menu>
+    </Nav>
   </HeaderContainer>
 );
 
