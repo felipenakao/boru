@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Title from './Title';
 import MenuContent from './MenuContent';
-import { entrada } from '../constants/menu';
+import { menus } from '../constants/menu';
 
 const MenuContainer = styled.div`
 `;
@@ -61,7 +61,9 @@ const MenuHeaderText = styled.div`
   margin: 30px 0px 0px;
 `;
 
+const renderMenus = () => menus.map(menu => <MenuContent title={menu.name.toUpperCase()} slug={menu.slug} image={menu.image} reverse={menu.reverse} values={menu.menu} />)
 
+const renderMenuNav = (scrollToDiv) => menus.map(menu => <MenuItem onClick={() => scrollToDiv(`#${menu.slug}`)}>{menu.name.toUpperCase()}</MenuItem>)
 
 const Menu = ({ scrollToDiv }) => (
   <MenuContainer id="menu">
@@ -70,18 +72,12 @@ const Menu = ({ scrollToDiv }) => (
         <Title margin="auto" icon="/assets/img/menu-icon.png" title="Cardápio" />
         <MenuHeaderText>Navegue por uma das opções de cardápio abaixo:</MenuHeaderText>
         <MenuList>
-          <MenuItem onClick={() => {}}>Cardápio 1</MenuItem>
-          <MenuItem onClick={() => {}}>Cardápio 2</MenuItem>
-          <MenuItem onClick={() => {}}>Cardápio 3</MenuItem>
-          <MenuItem onClick={() => {}}>Cardápio 4</MenuItem>
-          <MenuItem onClick={() => {}}>Cardápio 5</MenuItem>
+          {renderMenuNav(scrollToDiv)}
         </MenuList>
-        <Arrow src="/assets/img/menu-arrow.png" />
+        <Arrow onClick={() => scrollToDiv(`#quentes`)} src="/assets/img/menu-arrow.png" />
       </MenuTitleContent>
     </MenuHeader>
-    <MenuContent title="ENTRADAS" image="/assets/img/restaurant-featured.jpg" values={entrada} />
-    <MenuContent title="ENTRADAS" image="/assets/img/restaurant-featured.jpg" values={entrada} reverse />
-    <MenuContent title="ENTRADAS" image="/assets/img/restaurant-featured.jpg" values={entrada} />
+    {renderMenus()}
   </MenuContainer>
 );
 

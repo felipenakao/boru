@@ -27,7 +27,7 @@ const ModalImage = styled.img`
 const Delivery = ({ open, close }) => (
     <Modal
       styles={{
-        modal:{ backgroundColor: '#e2dfce'}
+        modal:{ backgroundColor: 'white'}
       }}
       open={open}
       onClose={close}

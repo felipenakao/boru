@@ -33,6 +33,7 @@ const MenuSection = styled.div`
 const MenuList = styled.div`
     flex: 2;
     padding: 0px 0px;
+    text-align: center;
 `;
 
 const MenuImgContainer = styled.div`
@@ -76,8 +77,8 @@ const renderMenu = (values) => {
   ));
 }
 
-const MenuContent = ({ title, values, reverse,  }) => (
-  <MenuContentContainer>
+const MenuContent = ({ title, values, reverse, image, slug }) => (
+  <MenuContentContainer id={slug}>
     <MenuTitle>
       <MenuTitleText>
         {title}
@@ -86,7 +87,7 @@ const MenuContent = ({ title, values, reverse,  }) => (
     <MenuSection reverse={reverse}>
       {renderMenu(values)}
       <MenuImgContainer>
-        <MenuImg src="assets/img/restaurant-featured.jpg" />
+        <MenuImg src={image} />
       </MenuImgContainer>
     </MenuSection>
   </MenuContentContainer>

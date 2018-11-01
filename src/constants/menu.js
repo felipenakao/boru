@@ -1,36 +1,106 @@
-export const entrada = [
-  [
-    {
-      title: 'Rolinho primavera',
-      description: '(carne/legumes)',
-    },
+export const menus = [
+  {
+    name: 'Pratos Quentes',
+    slug: 'quentes',
+    image: '/assets/img/menu/quentes.jpg',
+    menu: [
+      [
+        {
+          title: 'Entradas - Edamame / Shimeji ',
+        },
 
-    {
-      title: 'Rolinho primavera',
-      description: '(queijo opção de geléia de pimenta com mel)',
-    },
+        {
+          title: 'Macarrão no Shimeji ',
+          description: '',
+        },
 
-    {
-      title: 'Guiosa',
-      description: '(porco)',
-    },
-  ],
+        {
+          title: 'Yakisoba',
+          description: '',
+        },
+        {
+          title: 'Teppan  de Salmão ',
+        }
+      ],
 
-  [
-    {
-      title: 'Sunomono',
-      description: '(carne/legumes)',
-    },
+      [
+        {
+          title: 'Chicken Katsu',
+          description: '',
+        },
 
-    {
-      title: 'Missoshiro',
-      description: '(queijo opção de geléia de pimenta com mel)',
-    },
+        {
+          title: 'Lula a dore',
+          description: '',
+        },
 
-    {
-      title: 'Edamami',
-      description: '',
-    },
-  ],
-];
+        {
+          title: 'Camarão de Rivellino',
+          description: '',
+        },
+      ],
+    ]
+  },
+  {
+    name: 'Pratos Frios',
+    slug: 'frios',
+    reverse: true,
+    image: '/assets/img/menu/frios.jpg',
+    menu: [
+      [
+        {
+          title: 'Temakis ',
+        },
   
+        {
+          title: 'Combinado Salmão',
+          description: '',
+        },
+  
+        {
+          title: 'Combinado Salmão e Atum',
+          description: '',
+        },
+      ],
+  
+      [
+        {
+          title: 'Combinado variado',
+        },
+  
+        {
+          title: 'Sushi Vegano ',
+          description: '',
+        },
+  
+        {
+          title: 'Jyo Especial',
+          description: '',
+        },
+      ],
+    ]
+  },
+  {
+    name: 'Sobremesas',
+    slug: 'sobremesas',
+    image: '/assets/img/menu/sobremesas.jpg',
+    menu: [
+      [
+        {
+          title: 'Banana Flambada  ',
+        },
+  
+        {
+          title: 'Creme de papaya',
+          description: '',
+        },
+      ],
+      [
+        {
+          title: 'Pettit gateau',
+          description: '',
+        },
+      ]
+    ]
+  },
+];
