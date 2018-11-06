@@ -146,7 +146,7 @@ const Contact = () => (
             <SponsorLogos>
                 <SpondorLogoItem src="/assets/img/tripadvisor-logo.png" />
                 <SpondorLogoItem src="/assets/img/ifood-logo.png" />
-                <SpondorLogoItem src="/assets/img/spoonrocket-logo.png" />
+                {/* <SpondorLogoItem src="/assets/img/spoonrocket-logo.png" /> */}
                 <SpondorLogoItem src="/assets/img/rappi-logo.png" />
             </SponsorLogos>
         </Sponsor>

@@ -44,7 +44,7 @@ class App extends Component {
 
   render() {
     return (
-      <div style={{ background: '#222' }}>
+      <div style={{ background: '#222', margin: '0px', padding: '0px' }}>
         <Container>
           <Header scrollToDiv={this.scrollToDiv} />
           <Restaurant />
