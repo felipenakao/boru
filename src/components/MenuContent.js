@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import Carousel from 'nuka-carousel';
+import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
+import countFiles from 'count-files';
 
 const MenuContentContainer = styled.div`
     background-color: #121317;
@@ -52,9 +55,9 @@ const MenuItem = styled.div`
 `;
 
 const MenuItemTitle = styled.h5`
-  font-family: Passion One;
+  font-family: Roboto;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   margin: 0px;
 `;
 
@@ -63,6 +66,12 @@ const MenuItemDescription = styled.div`
   font-family: Roboto;
 
 `;
+
+// const CarouselButton = styled(div)`
+// border: 0px;
+// background: white;
+// padding: 5px;
+// `
 
 const renderMenu = (values) => {
   return values.map((list, i) => (
@@ -87,7 +96,35 @@ const MenuContent = ({ title, values, reverse, image, slug }) => (
     <MenuSection reverse={reverse}>
       {renderMenu(values)}
       <MenuImgContainer>
-        <MenuImg src={image} />
+      <Carousel
+        width="500px"
+        autoplay
+        // renderTopCenterControls={({ currentSlide }) => (
+        //   <div>Slide: {currentSlide}</div>
+        // )}
+        renderBottomCenterControls={() => (
+          <div></div>
+        )}
+        renderCenterLeftControls={({ previousSlide }) => (
+          <FaArrowAltCircleLeft
+            style={{ padding: 10, cursor: 'pointer' }}
+            size="30px"
+            color="white"
+            onClick={previousSlide}
+          />
+        )}
+        renderCenterRightControls={({ nextSlide }) => (
+          <FaArrowAltCircleRight
+            style={{ padding: 10, cursor: 'pointer' }}
+            size="30px"
+            color="white"
+            onClick={nextSlide}
+          />
+        )}
+      >
+        {image.map(img => <MenuImg src={img} />)}
+      </Carousel>
+        
       </MenuImgContainer>
     </MenuSection>
   </MenuContentContainer>

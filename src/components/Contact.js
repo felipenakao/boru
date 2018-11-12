@@ -55,6 +55,7 @@ const NumberTitle = styled.div`
 
 const NumberDescription = styled.div`
     font-family: Roboto;
+    margin: 15px 0px;
 `;
 
 const MapContainer = styled.div`
