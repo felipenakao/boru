@@ -42,7 +42,7 @@ export const menus = [
         },
 
         {
-          title: 'Camarão de Rivellino',
+          title: 'Camarão do Rivellino',
           description: '',
         },
       ],
@@ -53,7 +53,6 @@ export const menus = [
     slug: 'frios',
     reverse: true,
     image: [
-      '/assets/img/menu/frios/01.jpg',
       '/assets/img/menu/frios/02.jpg',
       '/assets/img/menu/frios/03.jpg',
       '/assets/img/menu/frios/04.jpg',
