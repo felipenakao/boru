@@ -1,99 +1,192 @@
 export const menus = [
   {
-    name: 'Pratos Quentes',
-    slug: 'quentes',
+    name: 'Entradas Quentes',
+    slug: 'entradas-quentes',
     image: [
-      '/assets/img/menu/quentes/01.jpg',
-      '/assets/img/menu/quentes/02.jpg',
-      '/assets/img/menu/quentes/03.jpg',
-      '/assets/img/menu/quentes/04.jpg',
-      '/assets/img/menu/quentes/05.jpg',
-      '/assets/img/menu/quentes/06.jpg',
+      '/assets/img/menu/shimeji.jpg',
     ],
     menu: [
       [
         {
-          title: 'Entradas - Edamame / Shimeji ',
-        },
-
-        {
-          title: 'Macarrão no Shimeji ',
+          title: 'Edamame',
           description: '',
         },
 
         {
-          title: 'Yakisoba',
+          title: 'Nori',
           description: '',
         },
         {
-          title: 'Teppan  de Salmão ',
+          title: 'Missoshiro',
+        },
+        {
+          title: 'Harumaki',
         }
       ],
 
       [
         {
-          title: 'Chicken Katsu',
+          title: 'Guiosa',
           description: '',
         },
 
         {
-          title: 'Lula a dore',
+          title: 'Shimeji na Manteiga',
           description: '',
         },
 
         {
-          title: 'Camarão do Rivellino',
+          title: 'Ebi Shin',
           description: '',
         },
+        {
+          title: 'Shake Shin',
+        }
       ],
     ]
   },
+
   {
-    name: 'Pratos Frios',
-    slug: 'frios',
+    name: 'Porções e Pratos À La Carte ',
+    slug: 'porcoes-e-pratos',
     reverse: true,
     image: [
-      '/assets/img/menu/frios/02.jpg',
-      '/assets/img/menu/frios/03.jpg',
-      '/assets/img/menu/frios/04.jpg',
-      '/assets/img/menu/frios/05.jpg',
-      '/assets/img/menu/frios/06.jpg',
-      '/assets/img/menu/frios/06.jpg',
+      '/assets/img/menu/yakisoba.jpg',
+      '/assets/img/menu/yakisoba-02.jpg',
+      '/assets/img/menu/lula-a-dore.jpg',
     ],
     menu: [
       [
         {
-          title: 'Temakis ',
+          title: 'Salada de Salmão',
         },
-  
+
         {
-          title: 'Combinado Salmão',
-          description: '',
+          title: 'Sukiyaki',
         },
-  
+
         {
-          title: 'Combinado Salmão e Atum',
-          description: '',
+          title: 'Yakisoba',
         },
+
+        {
+          title: 'Lula À Dorê',
+        },
+
+        {
+          title: 'Chicken Katsu',
+        }
       ],
-  
+
       [
         {
-          title: 'Combinado variado',
+          title: 'Anchova Grelhada',
         },
-  
+
         {
-          title: 'Sushi Vegano ',
+          title: 'Salmão Grelhado',
           description: '',
         },
-  
+
         {
-          title: 'Jyo Especial',
+          title: 'Teppan Yaki',
+          description: '',
+        },
+
+        {
+          title: 'Tempura Udon',
+          description: '',
+        },
+
+        {
+          title: 'Teishoku',
+          description: '',
+        },
+
+        {
+          title: 'Tempura',
           description: '',
         },
       ],
     ]
   },
+  
+  {
+    name: 'Entradas Frias',
+    slug: 'entradas-frias',
+    image: [
+      '/assets/img/menu/carpaccio-salmao.jpg',
+      '/assets/img/menu/carpaccio-salmao-02.jpg'
+    ],
+    menu: [
+      [
+        {
+          title: 'Sunomono',
+        },
+  
+        {
+          title: 'Carpaccio de Salmão',
+        },
+
+        {
+          title: 'Carpaccio de Atum',
+        },
+      ],
+  
+      [
+        {
+          title: 'Carpaccio Misto',
+        },
+  
+        {
+          title: 'Carpaccio de Polvo',
+        },
+      ],
+    ]
+  },
+
+  {
+    name: 'Pratos Frios À La Carte',
+    slug: 'pratos-frios',
+    reverse: true,
+    image: [
+      '/assets/img/menu/combinado-sushi-sashimi.jpg',
+      '/assets/img/menu/combinado-sushi-sashimi-02.jpg',
+      '/assets/img/menu/combinado-vegano.jpg',
+    ],
+    menu: [
+      [
+        {
+          title: 'Sushis',
+          description: 'Salmão / Atum / Peixe Branco'
+        },
+  
+        {
+          title: 'Skin',
+        },
+
+        {
+          title: 'Sashimi',
+          description: 'Salmão / Atum / Peixe Branco / Polvo'
+        },
+      ],
+  
+      [
+        {
+          title: 'Temaki',
+        },
+  
+        {
+          title: 'Combinados de Sushi e Sashimi',
+        },
+
+        {
+          title: 'Combinado Vegano',
+        },
+      ],
+    ]
+  },
+
   {
     name: 'Sobremesas',
     slug: 'sobremesas',
@@ -105,17 +198,35 @@ export const menus = [
     menu: [
       [
         {
-          title: 'Banana Flambada  ',
+          title: 'Tempura de Sorvete',
         },
-  
+
         {
-          title: 'Creme de papaya',
+          title: 'Creme de Papaya',
           description: '',
+        },
+
+        {
+          title: 'Banana Flambada',
+        },
+
+        {
+          title: 'Banana Caramelizada',
         },
       ],
       [
         {
-          title: 'Pettit gateau',
+          title: 'Pettit Gâteau',
+          description: '',
+        },
+
+        {
+          title: 'Sorvete com Calda de Chocolate',
+          description: '',
+        },
+
+        {
+          title: 'Frutas da Estação',
           description: '',
         },
       ]

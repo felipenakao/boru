@@ -15,7 +15,6 @@ const MenuHeader = styled.div`
 `;
 
 const MenuTitleContent = styled.div`
-  width: 600px;
   height: auto;
   margin: auto;
   text-align: center;
@@ -42,7 +41,7 @@ const MenuList = styled.ul`
 
 const MenuItem = styled.li`
   color: #e2dfce;
-  margin: 10px;
+  margin: 10px 20px;
   list-style: none;
   font-family: Passion One;
   font-weight: 400;

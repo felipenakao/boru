@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Carousel from 'nuka-carousel';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
-import countFiles from 'count-files';
+// import countFiles from 'count-files';
 
 const MenuContentContainer = styled.div`
     background-color: #121317;
@@ -51,7 +51,7 @@ const MenuImg = styled.img`
 
 const MenuItem = styled.div`
   color: #e3dfcf;
-  margin: 30px;
+  margin: 0px 30px 30px;
 `;
 
 const MenuItemTitle = styled.h5`
@@ -97,6 +97,7 @@ const MenuContent = ({ title, values, reverse, image, slug }) => (
       {renderMenu(values)}
       <MenuImgContainer>
       <Carousel
+        wrapAround
         width="500px"
         autoplay
         // renderTopCenterControls={({ currentSlide }) => (
