@@ -33,7 +33,7 @@ const Delivery = ({ open, close }) => (
       onClose={close}
       center
     >
-    <ModalTitle>Boru Sushi Kids</ModalTitle>
+    <ModalTitle>Delivery</ModalTitle>
     <ModalParagraph>
         Entregamos nossos deliciosos pratos com eficiência e rapidez em sua casa. Os pedidos podem ser realizados diretamente do restaurante ou pelos aplicativos Rappi e Ifood.
     </ModalParagraph>
