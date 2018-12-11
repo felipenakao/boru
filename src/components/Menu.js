@@ -57,7 +57,7 @@ const MenuHeaderText = styled.div`
   font-family: Roboto;
   color: #e2dfce;
   text-align: center;
-  margin: 30px 0px 0px;
+  margin: 60px 0px 15px;
 `;
 
 const renderMenus = () => menus.map(menu => <MenuContent title={menu.name.toUpperCase()} slug={menu.slug} image={menu.image} reverse={menu.reverse} values={menu.menu} />)

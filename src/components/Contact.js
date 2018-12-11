@@ -20,7 +20,7 @@ const TelContainer = styled.div`
     display: flex;
     text-align: center;
     justify-content: center;
-    margin: 30px 0px;
+    margin: 60px 0px;
 `;
 
 const Tel = styled.div`
@@ -42,7 +42,7 @@ const TelDescription = styled.div`
 
 const NumberContainer = styled.div`
     color: #e3dfcf;
-    margin: 30px 0px;
+    margin: 60px 0px;
 `;
 
 const NumberTitle = styled.div`
