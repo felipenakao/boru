@@ -73,7 +73,7 @@ const Menu = ({ scrollToDiv }) => (
         <MenuList>
           {renderMenuNav(scrollToDiv)}
         </MenuList>
-        <Arrow onClick={() => scrollToDiv(`#quentes`)} src="/assets/img/menu-arrow.png" />
+        <Arrow onClick={() => scrollToDiv(`#entradas-quentes`)} src="/assets/img/menu-arrow.png" />
       </MenuTitleContent>
     </MenuHeader>
     {renderMenus()}
