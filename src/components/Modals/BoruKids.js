@@ -61,7 +61,7 @@ const BoruKids = ({ open, close }) => (
       width="100%"
       autoplay
       slidesToShow={1.5}
-      framePadding="0px 5px"
+      cellSpacing={30}
       // renderTopCenterControls={({ currentSlide }) => (
       //   <div>Slide: {currentSlide}</div>
       // )}
